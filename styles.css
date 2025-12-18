@@ -42,9 +42,9 @@ nav a:hover {
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   nav {
-    font-size: 13px;
+    font-size: 8px;
   }
 }
 
