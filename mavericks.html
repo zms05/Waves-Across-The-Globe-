@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waves Across The Globe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">        <!-- global -->
+    <link rel="stylesheet" href="wave_gallery.css"> 
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="intro_section.css">
+
+<style>
+
+.hero-text {
+    color: rgb(227, 227, 227);
+}
+
+
+.intro-image { 
+    margin-top: 20px;
+
+}
+
+
+.mavericks-quote {
+    text-align: center;
+    padding: 50px 20px 200px 20px;  /* left padding only, right = 0 */
+}
+
+.mavericks-quote h3 {
+    color: #FE5A36;
+    line-height: 45px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.mag-section {
+    padding: 150px 80px 150px 30px;  /* left padding only, right = 0 */
+
+}
+
+.mag-image {
+    width: 40vw;               /* exactly half the visible screen */
+    margin-right: auto;         /* push it to the right edge */
+    max-width: 550px;     /* 👈 your new max width */
+    display: flex;
+    margin-top: 10px;
+}
+
+.mag-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 800px;          /* optional: keep it from getting too tall */
+    object-fit: cover;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .mag-section {
+    padding: 150px 25px 120px 25px;
+  }
+
+  .mag-section .intro-inner {
+    flex-direction: column;
+    align-items: center;     /* 👈 center image + text block */
+  }
+
+  .mag-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 0px auto; /* 👈 centered */
+  }
+
+
+  .mag-image img {
+    max-height: 900px;
+  }
+
+  .intro-text {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;   /* 👈 both sides */
+    max-width: none;     /* 👈 important if intro-text has max-width elsewhere */
+  }
+
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+    
+    <div class="page">
+
+        <!-- ==== NAVIGATION BAR ==== -->
+        <nav>
+            <a href="index.html">Home</a> -
+            <a href="mavericks.html">Mavericks</a> -
+            <a href="pipeline.html">Pipeline</a> -
+            <a href="cloudbreak.html">Cloudbreak</a> -
+            <a href="jaws.html">Jaws Pe'ahi</a>
+        </nav>
+
+        <!-- ==== HERO SECTION WITH BORDER TEXT BOX ==== -->
+        <section class="hero">
+
+            <img src="img/hero maveicks.png" class="hero-img">
+
+        <div class="hero-text">
+            <h1>Mavericks</h1>
+            <p>37.4920° N, 122.5006° W — Northwestern California</p>
+            <p class="hero-desc">A cold-water big-wave reef that wakes up when the North Pacific turns violent.</p>
+        </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="intro-inner">
+                <div class="intro-text">   
+                    <p>Mavericks comes to life when long-period winter swells roll across the North Pacific and hit the shallow reef off Pillar Point. The unique underwater topography suddenly forces the swell upward, creating a steep, powerful peak that can double in size within seconds.</p>
+                    <p>The reef acts as a natural amplifier, shaping a heavy right and a wider, slower left. When long-period energy meets light offshore winds, Mavericks produces one of the strongest and most dramatic waves on Earth — fast, deep, and demanding total commitment.</p>
+                    <div class="intro-section-wave-stats">
+                        
+                        <p>Wave Type: Big-wave reef / slab</p>
+                        <p>Best Season: Winter (Nov-Feb)</p>
+                        <p>Typical Size Range: 15-60 ft faces</p>
+                        <p>Water Temp: Cold (low-mid 50s °F)</p>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="img/map mavericks.png" alt="Surfer riding a wave below a snow-covered mountain">
+                </div>
+            </div>
+        </section>
+
+        <section class="mag-section">
+            <div class="intro-inner">
+                <div class="mag-image">
+                    <img src="img/Jay Moriarity Mavericks.png" alt="Surfer riding a wave below a snow-covered mountain">
+                </div>
+                <div class="intro-text">
+                        <p>Jay Moriarity — Sixteen and Fearless
+                        In the 1990s, Mavericks was a cold-water gladiator pit, surfed only by a handful of seasoned Northern California chargers. It was not where anyone expected to see a 16-year-old kid.</p>
+                        <p>Jay Moriarity changed that.</p>
+                        <p>On December 19, 1994, Jay paddled into a massive winter swell and launched himself down a wave that looked too big for his age, his size, or his experience. He hit a bump, fell from high on the face, and photographer Bob Barbour captured the exact moment he was suspended mid-air — a tiny silhouette against a giant, roaring wall of water.</p>
+                        <p>Surfer Magazine put the shot on the cover instantly. It wasn't a photo of victory — it was a photo of courage. A teenager charging a wave most adults wouldn't paddle into, proving that Mavericks wasn't just for veterans. It was a place where pure heart and fearlessness mattered more than age.</p>
+                        <p>Jay's wipeout became known as “The Iron Cross,” and instead of defining failure, it defined who he was: a young surfer willing to take on one of the heaviest waves on Earth.</p>
+                        
+                </div>
+            </div>
+        </section>
+
+        <section class="mavericks-quote">
+            <h3>“We all come from the sea, but we are not all of the sea. Those of us who are, we children of the tides, must return to it again and again, until the day we don't come back, leaving only that which was touched along the way.”</h3>
+            <h3>- Chasing Mavericks</h3>
+        </section>
+
+
+        <h2 class="wave-gallery-title">Wave Gallery</h2>
+
+
+        <section class="wave-gallery">
+            <div class="wave-gallery-grid">
+
+            <!-- Top full-width image -->
+             <img
+         src="img/wave grid 7 mav.png"
+        alt="Snow-covered mountain landscape at dawn"
+         class="wave-gallery-hero"
+    >
+
+            <!-- Middle two images -->
+        <img
+          src="img/wave grid 1 mav.png"
+          alt="Surfer in cold mountain environment"
+       class="wave-gallery-mid"
+     >
+
+     <img
+      src="img/wave grid 4 mav.png"
+      alt="Surfer in cold mountain environment"
+      class="wave-gallery-mid"
+        >
+
+     <!-- Bottom full-width image -->
+        <img
+      src="img/wave grid 2 mav.png"
+      alt="Mountain ridge overlooking the ocean at dusk"
+      class="wave-gallery-bottom"
+     >
+
+
+     <!-- Middle two images -->
+        <img
+          src="img/wave grid 5 mav.png"
+          alt="Surfer in cold mountain environment"
+       class="wave-gallery-mid"
+     >
+
+     <img
+      src="img/wave grid 6 mav.png"
+      alt="Surfer in cold mountain environment"
+      class="wave-gallery-mid"
+        >
+
+         </div>
+    </section>
+
+
+    <!-- ==== FOOTER IMAGE SECTION ==== -->
+<section class="footer-banner">
+    <img src="img/zs footer.png" alt="Footer Image" class="footer-img">
+
+    <div class="footer-text">
+        <h2 class="footer-title">Waves Across The Globe</h2>
+        <p class="footer-desc">
+            Personal project exploring surf breaks through art, photography, and mapping.
+        </p>
+        <p class="footer-credit">
+            Zach Singer — 40.7128° N, 74.0060° W
+        </p>
+    </div>
+</section>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waves Across The Globe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">        <!-- global -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="intro_section.css">
+
+<style>
+
+
+
+/* ==== EXPLORE THE BREAKS SECTION ==== */
+.breaks-section {
+    padding: 150px 100 100px;
+    margin: 0px;
+}
+
+/* Heading */
+.breaks-title {
+    font-size: 45px;
+    margin-left: 80px;
+    font-weight: 400;     /* great weight for clean surf look */
+    letter-spacing: 0.04em;
+    color: rgb(206, 206, 206);
+
+}
+
+@media (max-width: 900px) {
+    .breaks-title {
+        text-align: left !important;
+        margin-left: 20px !important;
+        margin-right: 0 !important;
+        font-size: 25px;
+    }
+}
+
+
+/* Row container */
+.break-row {
+    display: flex;
+    align-items: stretch;
+    max-width: 1500px;
+    margin: 0px auto;        /* center the block */
+    gap: 0;
+    margin-bottom: 120px;
+    margin-top: 0px;
+
+}
+
+/* Image container */
+.break-image {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+.break-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+/* Panel (button container) */
+.break-panel {
+    flex: 0 0 320px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+    
+}
+
+.break-panel strong {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.break-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0,0,0,0.35);
+}
+
+/* COLOR THEMES */
+.mavericks-panel {
+    background: #c89a61;
+}
+.mavericks-panel:hover {
+    background: #b6813c;
+}
+
+.pipeline-panel {
+    background: #4e8a8f;
+}
+.pipeline-panel:hover {
+    background: #3a6f72;
+}
+
+/* POSITIONING OVERRIDES */
+.mavericks-row {
+    margin-left: 0;    /* flush left */
+}
+.pipeline-row {
+    flex-direction: row-reverse;  /* panel left, image right */
+    margin-right: 0;   /* flush right */
+}
+
+/* ==== MOBILE STACK ==== */
+@media(max-width: 900px) {
+    .break-row {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 40px 0;
+    }
+
+    .break-panel,
+    .break-image {
+        width: 100%;
+        flex: none;
+    }
+
+    .break-image img {
+        max-height: none;
+    }
+}
+
+/* ===== CLOUDBREAK COLOR ===== */
+.cloudbreak-panel {
+    background-color: #8BB7D0;  /* light ocean blue */
+}
+
+.cloudbreak-panel:hover {
+    background-color: #6A9CB8;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== JAWS COLOR THEME ===== */
+.jaws-panel {
+    background-color: #c2c3e0; /* stormy blue/steel gray */
+}
+.jaws-panel:hover {
+    background-color: #8a8dac;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== JAWS POSITION (LEFT) ===== */
+.jaws-row {
+    margin-left: 0;     /* align to left */
+    margin-right: auto; /* keep centered layout rules intact */
+    margin-bottom: 300px; /* increase gap before the footer */
+
+}
+
+
+
+@media (max-width: 800px) {
+
+
+    .hero-text {
+        color: #1b1b1d;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+<div class="page">
+
+    <!-- ==== NAVIGATION BAR ==== -->
+    <nav>
+        <a href="home.html">Home</a> -
+        <a href="mavericks.html">Mavericks</a> -
+        <a href="pipeline.html">Pipeline</a> -
+        <a href="cloudbreak.html">Cloudbreak</a> -
+        <a href="jaws.html">Jaws Pe'ahi</a>
+    </nav>
+
+    <!-- ==== HERO SECTION WITH BORDER TEXT BOX ==== -->
+    <section class="hero">
+        <img src="img/hero home.png" class="hero-img">
+
+        <div class="hero-text">
+            <h1>Waves Across The Globe</h1>
+            <p>Discover the planet's greatest surf breaks, captured through art, photography, and storytelling.</p>
+        </div>
+    </section>
+
+     <section class="intro-section">
+        <div class="intro-inner">
+
+            <div class="intro-text">
+                
+                <p>Waves Across the Globe is an artistic journey into the ocean's most iconic surf breaks. Each location on this map represents more than a pin - it marks a place where water, culture, and human connection meet.</p>
+
+                <p>This project brings together art, photography, and storytelling to capture the character of waves around the world. From cold northern swells to warm tropical reef passes, every break has its own rhythm, history, and spirit.</p>
+
+                <p>Click on a surf break to explore its story: the visuals, the energy, and the experience that make it unique. Whether you're a surfer, an artist, or simply someone drawn to the sea, this space invites you to travel coastlines, chase swells, and see the world through the language of waves.</p>
+            </div>
+
+            <div class="intro-image">
+                <img src="img/surf montain.png" alt="Surfer riding a wave below a snow-covered mountain">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="breaks-section">
+    <h2 class="breaks-title">Explore the Breaks</h2>
+
+    <!-- ===== MAVERICKS (LEFT) ===== -->
+    <div class="break-row mavericks-row">
+        <div class="break-image">
+            <img src="img/mavericks home.png" alt="Mavericks">
+        </div>
+
+        <a href="mavericks.html" class="break-panel mavericks-panel">
+            <strong>Mavericks</strong>
+            37.4920° N, 122.5006° W<br>
+            (Northwestern California)<br>
+            →
+        </a>
+    </div>
+
+    <!-- ===== PIPELINE (RIGHT) ===== -->
+    <div class="break-row pipeline-row">
+        <div class="break-image">
+            <img src="img/pipeline home.png" alt="Banzai Pipeline">
+        </div>
+
+        <a href="pipeline.html" class="break-panel pipeline-panel">
+            <strong>Banzai Pipeline</strong>
+            21.6640° N, 158.0539° W<br>
+            (North Shore, O'ahu, Hawai'i)<br>
+            →
+        </a>
+    </div>
+    </section>
+
+    <!-- ===== CLOUDBREAK ROW (LEFT SIDE) ===== -->
+    <div class="break-row cloudbreak-row">
+    <!-- Image left -->
+    <div class="break-image">
+        <img src="img/cloud break home.png" alt="Cloudbreak Fiji">
+    </div>
+
+    <!-- Panel right -->
+    <a href="cloudbreak.html" class="break-panel cloudbreak-panel">
+        <div class="break-panel-inner">
+            <strong>Cloudbreak</strong><br>
+            16.8337° S, 179.8833° E<br>
+            (Tavarua Island, Fiji)
+            <span class="arrow">→</span>
+        </div>
+    </a>
+    </div>
+
+
+    <!-- ===== JAWS (LEFT SIDE) ===== -->
+    <div class="break-row jaws-row">
+    <div class="break-image">
+        <img src="img/jaws home.jpg" alt="Jaws (Pe'ahi), Maui">
+    </div>
+
+    <a href="jaws.html" class="break-panel jaws-panel">
+        <div class="break-panel-inner">
+            <strong>Jaws (Pe'ahi)</strong>
+            20.9425° N, 156.3030° W<br>
+            (Maui, Hawai'i)
+            <span class="arrow">→</span>
+        </div>
+    </a>
+    </div>
+
+<!-- ==== FOOTER IMAGE SECTION ==== -->
+<section class="footer-banner">
+    <img src="img/zs footer.png" alt="Footer Image" class="footer-img">
+
+    <div class="footer-text">
+        <h2 class="footer-title">Waves Across The Globe</h2>
+        <p class="footer-desc">
+            Personal project exploring surf breaks through art, photography, and mapping.
+        </p>
+        <p class="footer-credit">
+            Zach Singer — 40.7128° N, 74.0060° W
+        </p>
+    </div>
+</section>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

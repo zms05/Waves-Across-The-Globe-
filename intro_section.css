@@ -1,0 +1,157 @@
+/* Base (desktop) */
+.intro-section { 
+  padding: 300px 0 150px 80px; /* top right bottom left */
+}
+
+/* ==== INTRO SECTION ==== */
+
+/* row layout */
+.intro-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* text stays on left */
+.intro-text {
+    flex: 1;
+    max-width: 700px;
+    line-height: 1.6;        /* default spacing */
+    color: rgb(206, 206, 206);
+    font-size: 18px;
+    
+}
+
+.intro-text h2 {
+    font-weight: 300;
+}
+
+/* ==== INTRO IMAGE ALWAYS HALF SCREEN, RIGHT EDGE ==== */
+.intro-image {
+    width: 50vw;               /* exactly half the visible screen */
+    margin-left: auto;         /* push it to the right edge */
+    max-width: 900px;     /* 👈 your new max width */
+    display: flex;
+
+}
+
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 90vh;          /* optional: keep it from getting too tall */
+    object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 1400px) {
+  .intro-section {
+    padding: 200px 40px 60px 40px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.85;
+  }
+
+  .intro-section-wave-stats p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 12px 0;
+  }
+}
+
+
+
+
+
+/* ============================
+   FULL-WIDTH INTRO IMAGE
+   ============================ */
+@media (max-width: 1100px) {
+
+    /* Make the intro image truly full width on mobile */
+    .intro-inner {
+        /* stop flex from squeezing the image */
+        flex-direction: column !important;
+    }
+
+    .intro-image {
+        flex: none !important;          /* ignore desktop flex:1 */
+        width: 100vw !important;        /* full viewport width */
+        max-width: none !important;
+        margin: 15px 0 40px 0 !important;
+
+        /* pull the 100vw box out to the screen edges
+           even if the parent has padding or is centered */
+        margin-left: 50% !important;
+        transform: translateX(-50%) !important;
+        padding: 0 !important;
+    }
+
+    .intro-image img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-height: 600px;
+    }
+}
+
+/* stack on smaller screens */
+@media (max-width: 1100px) {
+   
+.intro-section {
+    padding: 60px 20px 60px 20px;
+  }
+    .intro-inner {
+        flex-direction: column;
+    }
+
+    .intro-text, 
+    .intro-image {
+        max-width: 100%;
+        left: 20px;
+        right: 20px;
+    }
+}
+
+/* Larger screens — add breathing room */
+@media (min-width: 1400px) {
+    .intro-text {
+        line-height: 1.9;
+    }
+}
+
+/* Ultra-wide screens — magazine style layout */
+@media (min-width: 1800px) {
+    .intro-text {
+        line-height: 3.1;
+    }
+}
+
+
+
+
+p { 
+  font-size: 20px;
+  line-height: 2;
+}
+
+.intro-section-wave-stats p {
+  color: #5268B9;
+  line-height: 1.7;
+  margin: 15px 0;
+}
+
+/* --- Responsive --- */
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+/* ==== FOOTER SECTION (MATCH HERO SCALE) ==== */
+.footer-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1b1b1d; /* dark border frame */
+}
+
+/* Image scales like hero image */
+.footer-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 1200px;   /* same pattern as hero */
+    object-fit: cover;
+}
+
+/* Text near TOP-LEFT instead of bottom */
+.footer-text {
+    position: absolute;
+    top: 60px;      /* distance from top of image */
+    left: 80px;     /* same spacing as hero text */
+    color: black;
+    max-width: 900px;
+}
+
+/* Title */
+.footer-text h2 {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;     /* great weight for clean surf look */
+    letter-spacing: 0.04em;
+}
+
+/* Description & credit */
+.footer-text p {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+/* ===== MOBILE: keep text near top, left-aligned ===== */
+@media (max-width: 900px) {
+
+    .footer-banner {
+        padding: 0;
+    }
+
+    .footer-text {
+        top: 10px !important;
+        left: 20px !important;
+        right: 20px !important;
+        max-width: 85%;
+        text-align: left;
+    }
+
+    .footer-text h2 {
+        font-size: 24px !important;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+   
+
+
+    .footer-text p {
+        font-size: 12px !important;
+        line-height: 1.4;
+        margin: 0;
+    }
+}
+
+
+
+
+
+.footer-desc {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .footer-desc {
+    display: block;
+    font-size: 15px !important;
+        line-height: 1.4;
+        margin: 0;
+  }
+}

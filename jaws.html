@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waves Across The Globe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">        <!-- global -->
+    <link rel="stylesheet" href="wave_gallery.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="intro_section.css">
+
+<style>
+.hero-text {
+    color: rgb(227, 227, 227);
+}
+
+
+.mag-section {
+    padding: 150px 80px 150px 30px;  /* left padding only, right = 0 */
+
+}
+
+.mag-image {
+    width: 40vw;               /* exactly half the visible screen */
+    margin-right: auto;         /* push it to the right edge */
+    max-width: 1000px;     /* 👈 your new max width */
+    display: flex;
+    margin-top: 20px;
+}
+
+.mag-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 1200px;          /* optional: keep it from getting too tall */
+    object-fit: cover;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .mag-section {
+    padding: 150px 0px 120px 0px;
+  }
+
+  .mag-section .intro-inner {
+    flex-direction: column;
+    align-items: center;     /* 👈 center image + text block */
+  }
+
+  .mag-image {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 0px auto; /* 👈 centered */
+  }
+
+
+  .mag-image img {
+    max-height: 900px;
+  }
+
+  .intro-text {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;   /* 👈 both sides */
+    max-width: none;     /* 👈 important if intro-text has max-width elsewhere */
+  }
+
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+    
+    <div class="page">
+
+        <!-- ==== NAVIGATION BAR ==== -->
+        <nav>
+            <a href="index.html">Home</a> -
+            <a href="mavericks.html">Mavericks</a> -
+            <a href="pipeline.html">Pipeline</a> -
+            <a href="cloudbreak.html">Cloudbreak</a> -
+            <a href="jaws.html">Jaws Pe'ahi</a>
+        </nav>
+
+        <!-- ==== HERO SECTION WITH BORDER TEXT BOX ==== -->
+        <section class="hero">
+
+            <img src="img/hero jaws.png" class="hero-img">
+
+        <div class="hero-text">
+            <h1>Jaws Pe'ahi</h1>
+            <p>21.6640° N, 156.2950° W — Pe'ahi, Maui, Hawai'i</p>
+            <p class="hero-desc">Jaws concentrates deep-ocean Pacific energy into towering waves, where long-period swells produce some of the heaviest surf on Earth.</p>
+        </div>
+        
+
+
+            <section class="intro-section">
+         <div class="intro-inner">
+
+            <div class="intro-text">
+              <p>Jaws breaks over a deep-water reef off Pe'ahi on Maui's north shore, where long-period North Pacific swells travel thousands of miles across open ocean before meeting a sudden rise in the seafloor. With no continental shelf to soften their approach, that distant energy arrives concentrated and intact, transforming open-water swell into some of the largest waves on Earth.</p>
+              <p>Unlike shallow, ledge-style reefs, Jaws draws its power from depth. The wave stands up gradually, loading mass and speed before breaking, producing towering open faces that move with relentless force. Control, commitment, and precise timing matter more than technical finesse, and even small miscalculations are amplified at scale.</p>
+
+      <div class="intro-section-wave-stats">
+        <p>Wave Type: Deep-water reef break</p>
+        <p>Best Season: Winter (Nov-March)</p>
+        <p>Typical Size Range: 20-60+ ft faces</p>
+        <p>Water Temp: Cool (mid-60s °F)</p>
+        </div>
+      </div>
+
+      <div class="intro-image">
+        <img src="img/intro jaws.png" alt="Pipeline barreling over shallow reef">
+      </div>
+    </div>
+    </section>
+
+      <section class="mag-section">
+            <div class="intro-inner">
+                <div class="mag-image">
+                    <img src="img/laird jaws.png" alt="Surfer riding a wave below a snow-covered mountain">
+                </div>
+                <div class="intro-text">
+                        <p>Laird Hamilton didn't just ride Jaws — he reimagined it. At a time when the wave was considered too fast, too large, and too unpredictable to paddle, Hamilton saw possibility where others saw a hard limit. By pioneering tow-in surfing, he removed the final barrier to scale, using speed to meet the wave on its own terms.</p>
+                        <p>Tow-in surfing wasn't about convenience; it was about access. It allowed surfers to enter waves at full momentum, matching the pace of a swell that had traveled thousands of miles across open ocean. At Jaws, that meant confronting faces taller than buildings, moving with relentless speed and power.</p>
+                        <p>Hamilton's approach pushed the limits of what could be ridden. Waves once thought too large to surf became rideable, and Jaws emerged not just as a break, but as a benchmark for scale in big-wave surfing.</p>
+                        <p>If you want this even more wave-centric (less about Hamilton, more about motion, scale, and water), I can tilt it one last step in that direction.</p>
+                </div>
+            </div>
+        </section>
+
+
+          <h2 class="wave-gallery-title">Wave Gallery</h2>
+
+
+        <section class="wave-gallery">
+            <div class="wave-gallery-grid">
+
+            <!-- Top full-width image -->
+             <img
+         src="img/wave grid 1 jaws.png"
+        alt="Snow-covered mountain landscape at dawn"
+         class="wave-gallery-hero"
+    >
+
+            <!-- Middle two images -->
+        <img
+          src="img/wave grid 4 jaws.png"
+          alt="Surfer in cold mountain environment"
+       class="wave-gallery-mid"
+     >
+
+     <img
+      src="img/wave grid 3 jaws.png"
+      alt="Surfer in cold mountain environment"
+      class="wave-gallery-mid"
+        >
+
+     <!-- Bottom full-width image -->
+        <img
+      src="img/wave grid 2 jaws.png"
+      alt="Mountain ridge overlooking the ocean at dusk"
+      class="wave-gallery-bottom"
+     >
+
+
+     <!-- Middle two images -->
+        <img
+          src="img/wave grid 5 jaws.png"
+          alt="Surfer in cold mountain environment"
+       class="wave-gallery-mid"
+     >
+
+     <img
+      src="img/wave grid 6 jaws.png"
+      alt="Surfer in cold mountain environment"
+      class="wave-gallery-mid"
+        >
+
+         </div>
+    </section>
+
+
+    <!-- ==== FOOTER IMAGE SECTION ==== -->
+<section class="footer-banner">
+    <img src="img/zs footer.png" alt="Footer Image" class="footer-img">
+
+    <div class="footer-text">
+        <h2 class="footer-title">Waves Across The Globe</h2>
+        <p class="footer-desc">
+            Personal project exploring surf breaks through art, photography, and mapping.
+        </p>
+        <p class="footer-credit">
+            Zach Singer — 40.7128° N, 74.0060° W
+        </p>
+    </div>
+</section>
+
+
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>
