@@ -1,0 +1,175 @@
+/* ==== BASIC SETUP ==== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #1b1b1d; /* page border color */
+}
+
+/* ==== PAGE WRAPPER ==== */
+.page {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #1b1b1d;
+}
+
+/* ==== NAVIGATION BAR ==== */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1b1b1d;
+    color: rgb(210, 234, 245);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+nav a {
+    color: rgb(189, 227, 244);
+    text-decoration: none;
+    margin: 0 12px;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 500px) {
+  nav {
+    font-size: 12px;
+  }
+}
+
+
+/* ==== HERO SECTION (BIG IMAGE) ==== */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Image scales perfectly with auto height */
+.hero-img {
+    width: 100%;
+    height: auto;      /* <-- THIS fixes your issue */
+    display: block;
+    max-height: 1300px;   /* adjust this number */
+}
+
+/* Optional text positioning */
+.hero-text {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.hero-text {
+    color: #1b1b1d;
+}
+
+
+.hero-text h1 {
+    font-weight: 500;     /* great weight for clean surf look */
+    letter-spacing: 0.04em;
+    font-size: 4rem;
+}
+
+
+
+
+/* ===== MOBILE: move text up & keep left-aligned ===== */
+@media (max-width: 1300px) {
+
+    .hero {
+        padding: 0; /* optional, keeps image tight to top */
+    }
+
+    .hero-text {
+        /* override desktop positioning */
+        top: 20px !important;
+        bottom: auto !important;
+        left: 40px !important;
+        right: auto !important;
+        max-width: 85%;
+        text-align: left;
+    }
+
+    .hero-text h1 {
+        font-size: 40px !important;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .hero-text p {
+        font-size: 18px !important;
+        line-height: 1.8;
+        margin: 0;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding: 0; /* optional, keeps image tight to top */
+    }
+
+    .hero-text {
+        /* override desktop positioning */
+        top: 10px !important;
+        bottom: auto !important;
+        left: 40px !important;
+        right: auto !important;
+        max-width: 85%;
+        text-align: left;
+        color: rgb(227, 227, 227);
+    }
+
+    .hero-text h1 {
+        font-size: 30px !important;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .hero-text p {
+        font-size: 15px !important;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+   
+}
+
+
+.hero-desc {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .hero-desc {
+    display: block;
+    font-size: 15px !important;
+        line-height: 1.4;
+        margin: 0;
+  }
+}
+
+
+@media (min-width: 1300px) {
+  .hero-desc {
+    display: block;
+    font-size: 18px !important;
+        line-height: 1.5;
+        margin: 0;
+  }
+}
+
